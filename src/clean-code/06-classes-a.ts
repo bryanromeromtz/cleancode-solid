@@ -1,3 +1,5 @@
+// NO APLICANDO EL PRINSIPIO DE RESPONSABILIDAD UNICA
+
 (() => {
   type Gender = "M" | "F";
 
@@ -52,14 +54,16 @@
     }
   }
 
-  // const newUser = new User(
-  //   "Byan",
-  //   "M",
-  //   new Date("1992-11-01"),
-  //   "mail@mail.com",
-  //   "Admin",
-  //   new Date()
-  // );
+  const userSettings = new UserSettings(
+    "/usr/home",
+    "/home",
+    "envkt@example.com",
+    "Admin",
+    "John Doe",
+    "M",
+    new Date(),
+    new Date()
+  );
 
-  // console.log(newUser);
+  console.log(userSettings);
 })();
